@@ -1,18 +1,17 @@
-const role = [2, 'author'];
+enum Role { ADMIN, READ_ONLY, AUTHOR};
 
-role.push('admin')
-role[1] = 1
+const person = {
+    name: 'lam',
+    age: 30,
+    role: Role.ADMIN
+}
 
-console.log(role)
+console.log(person)
 
+if(person.role === 0) {
+    console.log('admin')
+}
 
-// Tuples Type
-//* 1. fixed element
-//* 2. exact type
-let rolePromax: [number, string];
-
-rolePromax = 1
-rolePromax = [1, 2]
-rolePromax= 'ahihi'
-rolePromax = [1, 'ahihi']
-
+if(person.role === Role.ADMIN) {
+    console.log('admin')
+}
