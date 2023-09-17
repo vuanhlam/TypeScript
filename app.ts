@@ -1,21 +1,18 @@
-const person: {
-    name: string,
-    age: number,
-    address: string,
-    hobbies: string[]
-} = {
-    name: 'vu anh lam',
-    age: 12,
-    address: 'viet nam',
-    hobbies: ['Sport', 'Cooking']
-}
+const role = [2, 'author'];
 
-console.log(person.hobbies)
+role.push('admin')
+role[1] = 1
 
-let favorites: string[];
-favorites = 7
-favorites = ''
-favorites = ['ahihi', 'meme']
+console.log(role)
 
-let favorite1: any[]
-favorite1 = [1, 'ahihi']
+
+// Tuples Type
+//* 1. fixed element
+//* 2. exact type
+let rolePromax: [number, string];
+
+rolePromax = 1
+rolePromax = [1, 2]
+rolePromax= 'ahihi'
+rolePromax = [1, 'ahihi']
+
